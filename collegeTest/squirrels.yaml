@@ -1,0 +1,15 @@
+modules: []
+
+db_connection: my_db
+
+base_path: "/{{product}}/v{{major_version}}"
+
+datasets:
+  college_data:
+    label: Colleges In USA
+    database_views:
+      database_view1:
+        file: database_view1.sql.j2
+    final_view: database_view1
+
+settings: {}
