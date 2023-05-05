@@ -211,10 +211,34 @@
                 }
             ],
             "trigger_refresh": false,
-            "selected_ids": [
-                "Illinois",
-                "District of Columbia"
+            "selected_ids": [],
+            "include_all": true,
+            "order_matters": false
+        },
+        {
+            "widget_type": "MultiSelect",
+            "name": "select",
+            "label": "Selection(s)",
+            "options": [
+                {
+                    "id": "1",
+                    "label": "region"
+                },
+                {
+                    "id": "2",
+                    "label": "name"
+                },
+                {
+                    "id": "3",
+                    "label": "category"
+                },
+                {
+                    "id": "4",
+                    "label": "url"
+                }
             ],
+            "trigger_refresh": false,
+            "selected_ids": [],
             "include_all": true,
             "order_matters": false
         }

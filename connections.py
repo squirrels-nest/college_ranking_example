@@ -14,6 +14,5 @@ def main(proj: Dict[str, str], *args, **kwargs) -> ConnectionSet:
     sample2_db_connector = partial(sqlite3.connect, './database/sample.db', check_same_thread=False)
     return ConnectionSet({
         'my_db': QueuePool(sample_db_connector),
-        'my_second': QueuePool(sample2_db_connector),
-        'my_third': sa.create_engine()
+        'my_second': QueuePool(sample2_db_connector)
     })
